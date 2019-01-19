@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const Snowboard = require('./schemas/snowboard')
 const app = new express()
+const PORT = process.env.PORT || 8080
 app.use(bodyParser.json())
 app.use(cors())
 
@@ -25,7 +26,7 @@ app.get('/',(req,res) => {
 
 db.on('error', console.error.bind(console, 'Connection Error'))
   
-  app.listen(3000,() => {
+  app.listen(PORT,() => {
     console.log("Server is running...")
   })
   
