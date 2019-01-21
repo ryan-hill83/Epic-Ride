@@ -19,8 +19,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({snowboards: JsonFile.snowboards})
+    axios.get('http://epicrideserver.herokuapp.com:8080/').then(res => {
+      console.log(res.data)
+      this.setState({snowboards: res.data})
   }
+
+  //this.setState({snowboards: JsonFile.snowboards})
 
   allMountainHandler = () => {  
         let allMountain = JsonFile.snowboards.filter(function (el) {
