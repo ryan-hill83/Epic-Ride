@@ -16,7 +16,10 @@ The back end of this project was built with Node.js , Express.js and MongoDB.
 
 ### Screenshots ###
 
-<p align="center">
 ![](epicride.gif) <br/>
 ![](checkout.gif)
+
+<p align="center"> 
+<img src="https://github.com/rgawick/epic_ride/epicride.gif"><br/>
+<img src="https://github.com/rgawick/epic_ride/checkout.gif">
 </p>
