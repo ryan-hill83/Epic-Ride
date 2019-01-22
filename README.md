@@ -16,4 +16,5 @@ The back end of this project was built with Node.js , Express.js and MongoDB.
 
 ### Screenshots ###
 
-![](epicride.gif) .  ![](checkout.gif)
+![](epicride.gif)
+![](checkout.gif)
