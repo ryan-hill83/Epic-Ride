@@ -20,6 +20,6 @@ The back end of this project was built with Node.js , Express.js and MongoDB.
 ![](checkout.gif)
 
 <p align="center"> 
-<img src="https://github.com/rgawick/epic_ride/epicride.gif"><br/>
-<img src="https://github.com/rgawick/epic_ride/checkout.gif">
+<img src="https://github.com/rgawick/epic_ride/blob/master/epicride.gif"><br/>
+<img src="https://github.com/rgawick/epic_ride/blob/master/checkout.gif">
 </p>
