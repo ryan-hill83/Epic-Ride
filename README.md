@@ -14,7 +14,7 @@ The front end of this project was built with React, Redux, Bootstrap, JSX and CS
 
 The back end of this project was built with Node.js , Express.js and MongoDB. 
 
-### Screenshots ###
+### Demo ###
 
 ![](epicride.gif) <br/>
 ![](checkout.gif)
