@@ -20,8 +20,7 @@ class App extends Component {
 
   componentDidMount() {
     axios.get('http://epicrideserver.herokuapp.com:8080/').then(res => {
-      console.log(res.data)
-      this.setState({snowboards: res.data})
+      this.setState({snowboards: res.data})})
   }
 
   //this.setState({snowboards: JsonFile.snowboards})
@@ -55,26 +54,26 @@ class App extends Component {
       }
   
  
-  render() {
-    return (
-      <div>
-      <Header/>
-      <Nav allMountain = {this.allMountainHandler}
-      freeStyle = {this.freeStyleHandler}
-      freeRide = {this.freeRideHandler}
-      />
-      <div className="main_area">
-      <div className="cart_div"><Cart cart= {this.props.cart} /></div>
-      <div className="content_div"><Content snowboards = {this.state.snowboards}
-      addToCart = {this.props.addToCart}
-      />
-      </div>
-      </div>
-      </div>
-      
-    );
-  }
-}
+      render() {
+        return (
+          <div>
+          <Header/>
+          <Nav allMountain = {this.allMountainHandler}
+          freeStyle = {this.freeStyleHandler}
+          freeRide = {this.freeRideHandler}
+          />
+          <div className="main_area">
+          <div className="cart_div"><Cart cart= {this.props.cart} /> </div>
+          <div className="content_div"><Content snowboards = {this.state.snowboards}
+          addToCart = {this.props.addToCart}
+          />
+          </div>
+          </div>
+          </div>
+          
+        );
+      }
+    }
 
 
 const mapStateToProps = (state) => {
