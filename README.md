@@ -1,5 +1,7 @@
 # Epic Ride Snowboard Supply
 
+Created by [Ryan Gawick](https://github.com/rgawick)
+
 This was my first React / Redux project and is strictly a single page app. It is a snowboard shopping cart app that connects to the Stripe API for credit card processing.
 
 ### Live URL ###
