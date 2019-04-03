@@ -5,53 +5,48 @@ import Filter from './Filter'
 import Content from './Content'
 import Cart from './Cart'
 
-const JsonFile = require('./snowboards.json')
-
-
-class App extends Component {
+class Main extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      snowboards: []
+      allSnowboards: [],
+      filteredSnowboards: []
     }
   }
 
   componentDidMount() {
-    axios.get('http://epicrideserver.herokuapp.com:8080/').then(res => {
-      this.setState({snowboards: res.data})})
+    axios.get('http://epicrideserver.herokuapp.com/').then(res => {
+      this.setState({allSnowboards: res.data, filteredSnowboards: res.data})})
   }
 
-  //this.setState({snowboards: JsonFile.snowboards})
-
   allMountainHandler = () => {  
-        let allMountain = JsonFile.snowboards.filter(function (el) {
+        let allMountain = this.state.allSnowboards.filter(function (el) {
           return el.terrain.includes("All Mountain")
         })
-        this.setState({
-          snowboards: allMountain
+        this.setState({ 
+          filteredSnowboards: allMountain
         })
       }
   
   freeStyleHandler = () => {  
-        let allMountain = JsonFile.snowboards.filter(function (el) {
+        let freeStyle = this.state.allSnowboards.filter(function (el) {
           return el.terrain.includes("Freestyle")
         })
-        console.log(allMountain)
-        this.setState({
-          snowboards: allMountain
+        this.setState({ 
+          filteredSnowboards: freeStyle
         })
       }
 
   freeRideHandler = () => {  
-        let allMountain = JsonFile.snowboards.filter(function (el) {
+        let freeRide = this.state.allSnowboards.filter(function (el) {
           return el.terrain.includes("Freeride")
         })
-        this.setState({
-          snowboards: allMountain
+        this.setState({ 
+          filteredSnowboards: freeRide
         })
       }
+
   
- 
       render() {
         return (
           <div>
@@ -61,7 +56,7 @@ class App extends Component {
           />
           <div className="main_area">
           <div className="cart_div"><Cart cart= {this.props.cart} /> </div>
-          <div className="content_div"><Content snowboards = {this.state.snowboards}
+          <div className="content_div"><Content snowboards = {this.state.filteredSnowboards}
           addToCart = {this.props.addToCart}
           />
           </div>
@@ -90,4 +85,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(Main)

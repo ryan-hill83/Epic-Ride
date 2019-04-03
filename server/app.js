@@ -1,16 +1,15 @@
 const express = require('express')
 const mongoose = require('mongoose')
+mongoose.connect('mongodb://rgawick:epicride1@ds159574.mlab.com:59574/epicride', { useNewUrlParser: true }, {useMongoClient:true});
+const db = mongoose.connection;
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const Snowboard = require('./schemas/snowboard')
-const app = new express()
+const app = express()
 const PORT = process.env.PORT || 8080
+
 app.use(bodyParser.json())
 app.use(cors())
-
-mongoose.connect('mongodb://rgawick:epicride1@ds159574.mlab.com:59574/epicride');
-var db = mongoose.connection;
-
 
 db.once('open', function() {
     console.log("Database has been connected..")
