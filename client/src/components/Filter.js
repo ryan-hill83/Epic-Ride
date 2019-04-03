@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css'
 
-export class Nav extends Component {
+export class Filter extends Component {
 
   render() {
     return(
@@ -16,4 +16,4 @@ export class Nav extends Component {
 }
 
 
-export default Nav
+export default Filter
