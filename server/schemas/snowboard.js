@@ -6,7 +6,7 @@ const snowboardSchema = new mongoose.Schema({
   imageurl: String,
   terrain: String,
   shape: String,
-  length: Number,
+  length: [Number],
   price: Number
 })
 
