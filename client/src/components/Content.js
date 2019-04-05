@@ -16,11 +16,11 @@ export class Content extends Component {
       <h3>$ {board.price}</h3>
       <h4>{board.terrain}</h4> 
       <h4>Shape: {board.shape}</h4>
-      {/* <p>Board Length:</p>
+      <p>Board Length:</p>
       {board.length.map((item, index) => <li key={index} className="length_item">
           <input type="radio" name="length" id={index} value={item} /> {item}
           </li>
-      )} */}
+      )}
       </div>
       <div className="content_div2">
       <button className="button" type="button" onClick={() => this.props.addToCart({board})}>Add to Cart</button>

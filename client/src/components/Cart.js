@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import CheckoutArea from './CheckoutArea'
-import '../App.css'
 import cart from './images/cart.png'
 
 export class Cart extends Component {
