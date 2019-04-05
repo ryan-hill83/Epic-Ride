@@ -39,10 +39,6 @@ export class Content extends Component {
   
 }
 
-// {board.length.map((item, index) => <li key={index} className="length_item">
-//           <input type="radio" name="length" id={index} value={item} /> {item}
-//           </li>
-//       )}
 
   const mapStateToProps = (state) => {
     return {

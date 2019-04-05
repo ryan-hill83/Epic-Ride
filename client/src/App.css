@@ -65,8 +65,10 @@ position: fixed;
 .checkout_box{
     position: absolute;
     top: 150px;
-    
+    margin-left:50%;
+    transform: translateX(-50%);
 }
+
 .image{
   margin-left: 5px;
   height: 200px;
@@ -89,6 +91,13 @@ position: fixed;
 .cart_div{
   position: fixed;
   margin-top: 150px;
+}
+
+.price_in_cart{
+  position: relative;
+  bottom: 67px;
+  left: 60px;
+  margin-bottom: -30px;
 }
 
 .content_div{

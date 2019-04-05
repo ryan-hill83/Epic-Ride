@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import CheckoutArea from './CheckoutArea'
 import cart from './images/cart.png'
+import { Link } from 'react-router-dom';
 
 export class Cart extends Component {
 
@@ -13,9 +14,10 @@ export class Cart extends Component {
       let cartItems = this.props.cart.map((board,index) => {
         return  <div>
                 <li key={index} className="cart_item">
-               <h3>{board.name}</h3>
-               <img className="cart_image" src={board.imageurl} />
+               <h3>{board.content.name}</h3>
+               <img className="cart_image" src={board.content.imageurl} />
                <button type="button" className="button" onClick={() => this.props.removeFromCart({board})}>Remove</button>
+               <p className="price_in_cart">$ {board.content.price}</p>
                </li>
                </div>
       })
@@ -24,7 +26,9 @@ export class Cart extends Component {
         <div>
         <CheckoutArea />
         <img className="cart" src={cart} />
-        <button type="button" className="button" onClick={() => this.props.checkOut()}>Checkout</button>
+        <Link to="/checkout">
+        <button type="button" className="button">Checkout</button>
+        </Link>
         <li className="margin_top">Quantity: {this.props.cartCounter}</li>
         <li>Total: $ {this.props.totalPrice}</li>
         <li>{cartItems}</li>
