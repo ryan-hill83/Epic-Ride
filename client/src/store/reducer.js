@@ -20,8 +20,8 @@ const reducer = (state = initialState, action) => {
         case 'REMOVE':
         return {...state,
              cartCounter: state.cartCounter - 1,
-             totalPrice: state.totalPrice - action.payload.board.price,
-             cart: state.cart.filter((item) => action.payload.board._id !== item._id)           
+             totalPrice: state.totalPrice - action.payload.board.content.price,
+             cart: state.cart.filter(item => action.payload.board.id !== item.id)           
             }
         case 'CHECKOUT':
         return {...state,
