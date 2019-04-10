@@ -27,7 +27,7 @@ export class Cart extends Component {
         <CheckoutArea />
         <img className="cart" src={cart} />
         <Link to="/checkout">
-        <button type="button" className="button">Checkout</button>
+        <button type="button" className="checkout_button">Checkout</button>
         </Link>
         <li className="margin_top">Quantity: {this.props.cartCounter}</li>
         <li>Total: $ {this.props.totalPrice}</li>

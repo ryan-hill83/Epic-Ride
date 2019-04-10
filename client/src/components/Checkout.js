@@ -7,7 +7,7 @@ class Checkout extends Component {
   render() {
     let cartItems = this.props.cart.map((board,index) => {
       return  <div>
-              <li key={index} className="cart_item">
+              <li key={index} className="cart_item_checkout">
              <h3>{board.content.name}</h3>
              <img className="cart_image" src={board.content.imageurl} />
              <button type="button" className="button" onClick={() => this.props.removeFromCart({board})}>Remove</button>
@@ -16,13 +16,15 @@ class Checkout extends Component {
              </div>
     })
 
-   return( 
+   return(
+      <div><p className="confirmation">Please Confirm your Purchase!</p>
       <div className="checkout_box">
       <img className="cart" src={cart} />
       <button type="button" className="button" onClick={() => this.props.checkOut()}>Purchase</button>
       <li className="margin_top">Quantity: {this.props.cartCounter}</li>
-      <li>Total: $ {this.props.totalPrice}</li>
+      <li className="price_at_checkout">Total: $ {this.props.totalPrice}</li>
       <li>{cartItems}</li>
+      </div>
       </div>)
   
     }
