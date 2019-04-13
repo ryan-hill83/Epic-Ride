@@ -27,6 +27,13 @@ const reducer = (state = initialState, action) => {
         return {...state,
             showCheckout: true
         }
+        case 'EMPTY_CART':
+        return { ...state,
+            cartCounter: 0,
+            totalPrice: 0,
+            cart: [],
+            cartId: 0
+        }
 
         default: 
         return state
