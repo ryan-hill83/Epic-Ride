@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import cart from './images/cart.png'
 import CheckoutArea from './CheckoutArea'
+import Stripe from './Stripe'
 
 class Checkout extends Component {
   render() {
@@ -21,6 +22,7 @@ class Checkout extends Component {
       <div className="checkout_box">
       <img className="cart" src={cart} />
       <button type="button" className="button" onClick={() => this.props.checkOut()}>Purchase</button>
+      <Stripe value={this.props.totalPrice} />
       <li className="margin_top">Quantity: {this.props.cartCounter}</li>
       <li className="price_at_checkout">Total: $ {this.props.totalPrice}</li>
       <li>{cartItems}</li>

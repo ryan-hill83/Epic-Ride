@@ -7,6 +7,8 @@ const cors = require('cors')
 const Snowboard = require('./schemas/snowboard')
 const app = express()
 const PORT = process.env.PORT || 8080
+require('dotenv').config()
+const stripe = require('stripe')(process.env.SECRET_KEY)
 
 app.use(bodyParser.json())
 app.use(cors())
@@ -21,6 +23,29 @@ app.get('/',(req,res) => {
     res.json(snowboards)
   })
 
+})
+
+app.post('/save-stripe-token', (req,res) => {
+  const charge = stripe.charges.create({
+           amount: req.body.amount,
+           currency: 'USD',
+           source: req.body.token
+       })
+
+       let email = req.body.email
+
+
+       var newSnowboard = new Snowboard()
+
+       newSnowboard.email = email
+
+       newSnowboard.save(function(err,snowboard){
+         if(err){
+           res.send(JSON.stringify({message: 'order encountered an ERROR'}))
+         }else{
+           res.send(JSON.stringify({message: 'order is placed', email: email}))
+         }
+       })
 })
 
 db.on('error', console.error.bind(console, 'Connection Error'))
