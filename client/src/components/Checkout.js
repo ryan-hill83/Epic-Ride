@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import cart from './images/cart.png'
-import CheckoutArea from './CheckoutArea'
 import Stripe from './Stripe'
 
 class Checkout extends Component {

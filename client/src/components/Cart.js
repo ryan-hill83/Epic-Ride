@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import CheckoutArea from './CheckoutArea'
 import cart from './images/cart.png'
 import { Link } from 'react-router-dom';
 
@@ -24,7 +23,6 @@ export class Cart extends Component {
 
      return( 
         <div>
-        <CheckoutArea />
         <img className="cart" src={cart} />
         <Link to="/checkout">
         <button type="button" className="checkout_button">Checkout</button>

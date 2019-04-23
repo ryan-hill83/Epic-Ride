@@ -1,0 +1,378 @@
+{
+   "snowboards":[ 
+    {
+        "id": 1,
+        "name": "Lib Tech TRS HP C2X ",
+        "imageurl": "https://images.evo.com/imgp/700/137454/573335/lib-tech-trs-hp-c2x-snowboard-2019-no-color.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freestyle"
+        ],
+        "shape": "True Twin",
+        "length": [
+         148,
+         151,
+         154,
+         159,
+         162
+        ],
+        "price": 539.00
+      },
+      { 
+        "id": 2,
+        "name": "Salomon Sight",
+        "imageurl": "https://images.evo.com/imgp/700/140242/577427/clone.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freestyle"
+        ],
+        "shape": "Directional Twin",
+        "length": [
+          155,
+          159,
+          160,
+          162
+        ],
+        "price": 429.00
+      },
+      {
+        "id": 3,
+        "name": "Ride Wildlife",
+        "imageurl": "https://images.evo.com/imgp/700/137972/565987/clone.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+          157,
+          160,
+          163,
+          166
+        ],
+        "price": 499.00
+      },
+      {
+        "_id": 4,
+        "name": "Moss Snowstick",
+        "imageurl": "https://images.evo.com/imgp/700/138073/590075/moss-snowstick-performance-quad-60-snowboard-2018-160.jpg",
+        "terrain": [
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+          160,
+          165
+        ],
+        "price": 799.00
+      },
+      { 
+        "_id": 5,
+        "name": "Never Summer Instagator",
+        "imageurl": "https://images.evo.com/imgp/700/137061/588385/never-summer-insta-gator-snowboard-2019-144.jpg",
+        "terrain": [
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+          151,
+          155,
+          158,
+          160
+        ],
+        "price": 599.00
+      },
+      {
+        "_id": 6,
+        "name": "GNU Antigravity x evo",
+        "imageurl": "https://images.evo.com/imgp/700/148339/609398/clone.jpg",
+        "terrain": [
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+          156,
+          159,
+          162
+        ],
+        "price": 459.00
+      },
+      {
+        "_id": 7,
+        "name": "Never Summer Swift",
+        "imageurl": "https://images.evo.com/imgp/700/137066/568366/clone.jpg",
+        "terrain": [
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+          148,
+          152,
+          157,
+          162
+        ],
+        "price": 529.00
+      },
+      {
+        "_id": 8,
+        "name": "Lib Tech Wayfinder",
+        "imageurl": "https://images.evo.com/imgp/700/137465/573346/lib-tech-mc-wayfinder-snowboard-2019-153.jpg",
+        "terrain": [
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+          148,
+          152,
+          155
+        ],
+        "price": 469.00
+      },
+      {
+        "_id": 9,
+        "name": "Salomon Super 8",
+        "imageurl": "https://images.evo.com/imgp/700/139258/573116/salomon-super-8-snowboard-2019-151.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+          151,
+          154,
+          157,
+          160,
+          163
+        ],
+        "price": 449.00
+      },
+      {
+        "_id": 10,
+        "name": "Jones Mind Expander",
+        "imageurl": "https://images.evo.com/imgp/700/138777/569387/jones-mind-expander-snowboard-2019-146.jpg",
+        "terrain": [
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+         146,
+         150,
+         158
+        ],
+        "price": 419.00
+      },
+      { 
+        "_id": 11,
+        "name": "Marhar Darkside",
+        "imageurl": "https://images.evo.com/imgp/700/138834/596421/marhar-darkside-snowboard-2019-154.jpg",
+        "terrain": [
+            "Freestyle"
+        ],
+        "shape": "True Twin",
+        "length": [
+         154,
+         156,
+         158
+        ],
+        "price": 519.00
+      },
+      {
+        "_id": 12,
+        "name": "Nidecker Era",
+        "imageurl": "https://images.evo.com/imgp/700/138498/568573/nidecker-era-snowboard-2019-153.jpg",
+        "terrain": [
+            "Freestyle"
+        ],
+        "shape": "True Twin",
+        "length": [
+         153,
+         156,
+         159,
+         162
+        ],
+        "price": 399.00
+      },
+      {
+        "_id": 13,
+        "name": "Lobster The Stomper",
+        "imageurl": "https://images.evo.com/imgp/700/137528/567207/clone.jpg",
+        "terrain": [
+            "Freestyle"
+        ],
+        "shape": "True Twin",
+        "length": [
+         153,
+         157
+        ],
+        "price": 499.00
+      },
+      {
+        "_id": 14,
+        "name": "Lib Tech Banana Magic",
+        "imageurl": "https://images.evo.com/imgp/700/137442/573323/lib-tech-banana-magic-fp-c2-snowboard-2019-152.jpg",
+        "terrain": [
+            "Freestyle"
+        ],
+        "shape": "True Twin",
+        "length": [
+         152,
+         154,
+         157,
+         161
+        ],
+        "price": 499.00
+      },
+      {
+        "_id": 15,
+        "name": "Never Summer Proto Type II",
+        "imageurl": "https://images.evo.com/imgp/700/137057/568364/clone.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freestyle"
+        ],
+        "shape": "True Twin",
+        "length": [
+         152,
+         154,
+         157,
+         160
+        ],
+        "price": 529.00
+      },
+      {
+        "_id": 16,
+        "name": "Lib Tech Frosty Boy",
+        "imageurl": "https://images.evo.com/imgp/700/137452/592341/lib-tech-skunk-ape-hp-c2-snowboard-2019-161w.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+          157,
+          160,
+          162,
+          165
+        ],
+        "price": 559.00
+      },
+      {
+        "_id": 17,
+        "name": "Lib Tech EJack Knife HP C3",
+        "imageurl": "https://images.evo.com/imgp/700/137458/573341/lib-tech-ejack-knife-hp-c3-snowboard-2019-154.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freeride"
+        ],
+        "shape": "Directional",
+        "length": [
+         154,
+         157,
+         159,
+         162
+        ],
+        "price": 439.00
+      },
+      {
+        "_id": 18,
+        "name": "Never Summer Snowtrooper X",
+        "imageurl": "https://images.evo.com/imgp/700/137041/574753/never-summer-snowtrooper-x-snowboard-2019-157.jpg",
+        "terrain": [
+            "All Mountain"
+        ],
+        "shape": "Directional Twin",
+        "length": [
+         157,
+         160,
+         164
+        ],
+        "price": 489.00
+      },
+      {
+        "_id": 19,
+        "name": "Burton Ripcord",
+        "imageurl": "https://images.evo.com/imgp/700/137708/587029/burton-ripcord-snowboard-2019-145.jpg",
+        "terrain": [
+            "All Mountain"
+        ],
+        "shape": "Directional",
+        "length": [
+         145,
+         150,
+         154,
+         157,
+         159,
+         162
+        ],
+        "price": 389.00
+      },
+      {
+        "_id": 20,
+        "name": "Burton Process Flying V ",
+        "imageurl": "https://images.evo.com/imgp/700/137729/586948/burton-process-fyling-v-snowboard-2019-152.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freestyle"
+        ],
+        "shape": "True Twin",
+        "length": [
+         152,
+         155,
+         157,
+         159,
+         162
+        ],
+         "price": 489.00
+      },
+      {
+        "_id": 21,
+        "name": "K2 Raygun",
+        "imageurl": "https://images.evo.com/imgp/700/137889/565539/k2-raygun-snowboard-2019-150.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freeride"
+        ],
+        "shape": "Directional Twin",
+        "length": [
+         155,
+         157,
+         159,
+         161
+        ],
+        "price": 389.00
+      },
+      {
+        "_id": 22,
+        "name": "Ride Saturday",
+        "imageurl": "https://images.evo.com/imgp/700/137978/565988/ride-saturday-snowboard-women-s-2019-142.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freeride"
+        ],
+        "shape": "True Twin",
+        "length": [
+         143,
+         150,
+         154
+        ],
+        "price": 499.00
+      },
+      {
+        "_id": 23,
+        "name": "Never Summer Heritage ",
+        "imageurl": "https://images.evo.com/imgp/700/137074/568368/never-summer-heritage-snowboard-2019-155.jpg",
+        "terrain": [
+            "All Mountain",
+            "Freestyle"
+        ],
+        "shape": "True Twin",
+        "length": [
+         155,
+         160,
+         162
+        ],
+        "price": 599.00
+      }
+    ]
+}
+  
