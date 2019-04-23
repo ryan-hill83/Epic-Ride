@@ -13,7 +13,7 @@ class Stripe extends Component {
       }).then(response => {
   
         response.json().then(data => {
-          if(data.message == 'order has been placed'){
+          if(data.message == 'order is placed'){
             alert(`Your ${data.message} under ${data.email}!`)
             this.props.emptyCart()
           } else {
@@ -24,14 +24,18 @@ class Stripe extends Component {
     }
   
     render() {
+
   
       return (
         <StripeCheckout
           token={this.onToken}
           stripeKey="pk_test_TYooMQauvdEDq54NiTphI7jx"
-          amount={this.props.value}
+          amount={this.props.value * 100}
           currency="USD"
-        />
+          shippingAddress={true}
+        >
+          <button className="button">Purchase</button>
+        </StripeCheckout>
       )
     }
   }

@@ -21,7 +21,6 @@ class Checkout extends Component {
       <div><p className="confirmation">Please Confirm your Purchase!</p>
       <div className="checkout_box">
       <img className="cart" src={cart} />
-      <button type="button" className="button" onClick={() => this.props.checkOut()}>Purchase</button>
       <Stripe value={this.props.totalPrice} />
       <li className="margin_top">Quantity: {this.props.cartCounter}</li>
       <li className="price_at_checkout">Total: $ {this.props.totalPrice}</li>

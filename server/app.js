@@ -5,6 +5,7 @@ const db = mongoose.connection;
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const Snowboard = require('./schemas/snowboard')
+const Order = require('./schemas/order')
 const app = express()
 const PORT = process.env.PORT || 8080
 require('dotenv').config()
@@ -35,11 +36,11 @@ app.post('/save-stripe-token', (req,res) => {
        let email = req.body.email
 
 
-       var newSnowboard = new Snowboard()
+       var newOrder = new Order()
 
-       newSnowboard.email = email
+       newOrder.email = email
 
-       newSnowboard.save(function(err,snowboard){
+       newOrder.save(function(err,snowboard){
          if(err){
            res.send(JSON.stringify({message: 'order encountered an ERROR'}))
          }else{
