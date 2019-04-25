@@ -6,7 +6,7 @@ This is an E-commerce style website that allows users to add snowboards to their
 
 ### Live URL ###
 
-https://epicride.herokuapp.com/   (Will take some time to load due to Heroku's "sleep mode" on free accounts)
+https://epicride.herokuapp.com/ 
 
 ### Front End ###
 
