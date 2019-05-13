@@ -12,6 +12,7 @@ class Checkout extends Component {
              <img className="cart_image" src={board.content.imageurl} />
              <button type="button" className="button" onClick={() => this.props.removeFromCart({board})}>Remove</button>
              <p className="price_in_cart">$ {board.content.price}</p>
+             <p className="length_in_cart">Length: {board.length}</p>
              </li>
              </div>
     })

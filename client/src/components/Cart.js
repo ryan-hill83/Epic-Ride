@@ -10,6 +10,7 @@ export class Cart extends Component {
       }
 
   render() {
+    
       let cartItems = this.props.cart.map((board,index) => {
         return  <div>
                 <li key={index} className="cart_item">
@@ -18,6 +19,7 @@ export class Cart extends Component {
                <button type="button" className="button" onClick={() => this.props.removeFromCart({board})}>Remove</button>
                <p className="price_in_cart">$ {board.content.price}</p>
                </li>
+               <li>Length: {board.length}</li>
                </div>
       })
 

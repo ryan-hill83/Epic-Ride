@@ -3,6 +3,7 @@ const initialState = {
     totalPrice: 0,
     cart: [],
     cartId: 0,
+    boardLength: 0,
     showCheckout: false
 }
 
@@ -15,8 +16,9 @@ const reducer = (state = initialState, action) => {
             ...state,
             cartCounter: state.cartCounter + 1,
             totalPrice: state.totalPrice + action.payload.board.price,
-            cart: cart.concat({id: state.cartId, content: action.payload.board}),
-            cartId: state.cartId + 1}
+            cart: cart.concat({id: state.cartId, content: action.payload.board, length: action.length}),
+            cartId: state.cartId + 1,
+            boardLength: action.length}
         case 'REMOVE':
         return {...state,
              cartCounter: state.cartCounter - 1,
