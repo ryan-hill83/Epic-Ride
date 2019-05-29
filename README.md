@@ -10,7 +10,7 @@ https://epicride.herokuapp.com/
 
 ### Front End ###
 
-The front end of this project was built with React, Redux, Bootstrap, JSX and CSS.
+The front end of this project was built with React, Redux, Bootstrap, Axios, JSX and CSS.
 
 ### Back End ###
 
