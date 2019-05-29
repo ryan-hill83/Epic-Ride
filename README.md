@@ -2,7 +2,7 @@
 
 Created by [Ryan Gawick](https://github.com/rgawick)
 
-This is an E-commerce style website that allows users to add snowboards to their shopping cart and check out. It connects to the Stripe Payment API for payment processing.
+This is an E-commerce style website that allows users to add snowboards to their shopping cart and check out. While selecting the snowboards they can filter them based on snowboard type and select the desired length. The app connects to the Stripe Payment API for payment processing.
 
 ### Live URL ###
 
