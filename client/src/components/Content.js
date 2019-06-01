@@ -36,7 +36,7 @@ export class Content extends Component {
       </select>
       </div>
       <div className="content_div2">
-      <button className="button" type="button" onClick={() => this.props.addToCart({board}, this.state.selectedOption)}>Add to Cart</button>
+      <button className="content_button" type="button" onClick={() => this.props.addToCart({board}, this.state.selectedOption)}>Add to Cart</button>
       <img className="image" src={board.imageurl} />
       </div>
       </li>
@@ -76,7 +76,3 @@ export class Content extends Component {
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Content)
-
-{/* <li key={index} className="length_item">
-          <input type="radio" name="length" id={index} value={item} onChange={this.handleOptionChange} /> {item}
-          </li> */}

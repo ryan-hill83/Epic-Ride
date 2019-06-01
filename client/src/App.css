@@ -37,6 +37,17 @@ z-index: 2;
   color: white;
   font-family: 'Russo One', sans-serif;
   font-size: 1.2em;
+  outline: medium solid black;
+  border: 1px solid black;
+}
+
+.nav_buttons:hover{
+  color: black;
+  background-color: white;
+}
+
+.nav_buttons:focus{
+  outline:0;
 }
 
 .button{
@@ -46,12 +57,34 @@ z-index: 2;
   font-size:1em;
 }
 
+.button:hover{
+  color: black;
+  background-color: white;
+}
+
+.content_button{
+  background-color: black;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size:1em;
+}
+
+.content_button:hover{
+  color: black;
+  background-color: white;
+}
+
 .checkout_button{
   margin-top: 5px;
   background-color: black;
   color: white;
   font-family: 'Russo One', sans-serif;
   font-size:1em;
+}
+
+.checkout_button:hover{
+  color: black;
+  background-color: white;
 }
 
 .cart{
@@ -79,7 +112,7 @@ z-index: 2;
     transform: translateX(-50%);
     border: 1px solid;
     box-shadow: 4px 2px 10px;
-    padding: 30px 85px 40px 85px;
+    padding: 30px 60px 40px 60px;
     z-index: 1;
 }
 
@@ -87,9 +120,7 @@ z-index: 2;
   white-space: nowrap;
   overflow: hidden;
 }
-.confirmation{
-  display: none;
-}
+
 
 .image{
   margin-left: 5px;
@@ -125,15 +156,14 @@ z-index: 2;
 
 .price_in_cart{
   position: relative;
-  bottom: 67px;
+  font-size: .9em;
+  bottom: 80px;
   left: 60px;
   margin-bottom: -30px;
 }
 
 .length_in_cart{
-  position: relative;
-  bottom: 12px;
-  margin-bottom: -5px;
+  display: none;
 }
 
 .content_div{
@@ -156,11 +186,23 @@ z-index: 2;
   .cart{
     height: 40px;
     width: 40px;
+  }
 
+  .nav_buttons{
+    border: 1px solid white;
+    outline: none;
   }
 
   .cart_item{
     display: unset;
+  }
+
+  .length_in_cart{
+    font-size: .9em;
+    display:unset;
+    position: relative;
+    left: 60px;
+    top: -50px;
   }
   
   .content_div{
@@ -171,15 +213,6 @@ z-index: 2;
   .image{
     height: 700px;
     width: 700px;
-  }
-
-  .confirmation{
-    margin-left:50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: 77px;
-    font-family: 'Russo One', sans-serif;
-    font-size: 1.4em;
   }
 
   .snowboard_supply{
@@ -204,4 +237,5 @@ z-index: 2;
     box-shadow: 4px 2px 10px;
     padding: 30px 100px 40px 100px;
 }
+
 }

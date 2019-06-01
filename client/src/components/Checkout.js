@@ -11,14 +11,14 @@ class Checkout extends Component {
              <h3>{board.content.name}</h3>
              <img className="cart_image" src={board.content.imageurl} />
              <button type="button" className="button" onClick={() => this.props.removeFromCart({board})}>Remove</button>
-             <p className="price_in_cart">$ {board.content.price}</p>
-             <p className="length_in_cart">Length: {board.length}</p>
+             <p className="price_in_cart">Price: ${board.content.price}</p>
+             <p className="length_in_cart">Length: {board.length}cm</p>
              </li>
              </div>
     })
 
    return(
-      <div><p className="confirmation">Please Confirm your Purchase!</p>
+      <div>
       <div className="checkout_box">
       <img className="cart" src={cart} />
       <Stripe value={this.props.totalPrice} />

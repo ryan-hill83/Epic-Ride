@@ -15,7 +15,7 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://epicrideserver.herokuapp.com/').then(res => {
+    axios.get('https://epicrideserver.herokuapp.com/').then(res => {
       this.setState({allSnowboards: res.data, filteredSnowboards: res.data})})
   }
 
