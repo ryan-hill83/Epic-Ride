@@ -7,7 +7,7 @@ background-color: black;
 color:white;
 padding: 5px;
 position: fixed;
-z-index: 2;
+z-index: 3;
 }
 
 .header_text{
@@ -63,6 +63,8 @@ z-index: 2;
 }
 
 .content_button{
+  position: relative;
+  bottom: 160px;
   background-color: black;
   color: white;
   font-family: 'Russo One', sans-serif;
@@ -80,6 +82,7 @@ z-index: 2;
   color: white;
   font-family: 'Russo One', sans-serif;
   font-size:1em;
+  z-index: 1;
 }
 
 .checkout_button:hover{
@@ -103,6 +106,7 @@ z-index: 2;
   display: flex;
   position: fixed;
   margin-top: 72px;
+  z-index: 3;
 }
 
 .checkout_box{
@@ -152,6 +156,7 @@ z-index: 2;
   color: white;
   width: 100%;
   padding-bottom: 5px;
+  z-index: 3;
 }
 
 .price_in_cart{
@@ -169,6 +174,8 @@ z-index: 2;
 .content_div{
   margin-top: 250px;
 }
+
+
 
 @media only screen and (min-width: 600px){
   .main_area{
@@ -220,12 +227,18 @@ z-index: 2;
     display: inline;
   }
 
+  .content_button{
+    position: relative;
+    bottom: 660px;
+  }
+
   .checkout_button{
     margin-top: 0px;
     background-color: black;
     color: white;
     font-family: 'Russo One', sans-serif;
     font-size:1em;
+    z-index: 1;
   }
 
   .checkout_box{
