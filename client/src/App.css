@@ -188,6 +188,9 @@ z-index: 3;
     margin-top: 100px;
     background-color: white;
     color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 90%;
   }
 
   .cart{
