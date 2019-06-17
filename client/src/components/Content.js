@@ -13,7 +13,6 @@ export class Content extends Component {
     this.setState({
       [board]: e.target.value
     })
-    console.log(this.state)
   }
 
   handleSubmit = e => {
