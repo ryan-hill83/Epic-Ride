@@ -33,6 +33,7 @@ class Stripe extends Component {
           amount={this.props.value * 100}
           currency="USD"
           shippingAddress={true}
+          billingAddress={true}
         >
           <button className="button">Purchase</button>
         </StripeCheckout>
