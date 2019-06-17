@@ -13,7 +13,7 @@ class Stripe extends Component {
       }).then(response => {
   
         response.json().then(data => {
-          if(data.message == 'order is placed'){
+          if(data.message === 'order is placed'){
             alert(`Your ${data.message} under ${data.email}!`)
             this.props.emptyCart()
           } else {

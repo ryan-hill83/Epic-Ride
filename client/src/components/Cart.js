@@ -5,17 +5,13 @@ import { Link } from 'react-router-dom';
 
 export class Cart extends Component {
 
-    constructor(props){
-        super(props)
-      }
-
   render() {
     
       let cartItems = this.props.cart.map((board,index) => {
         return  <div key={`board${index}`}>
                 <li className="cart_item">
                <h3>{board.content.name}</h3>
-               <img className="cart_image" src={board.content.imageurl} />
+               <img className="cart_image" src={board.content.imageurl} alt="snowboard"/>
                <button type="button" className="button" onClick={() => this.props.removeFromCart({board})}>Remove</button>
                <p className="price_in_cart">Price: ${board.content.price}</p>
                </li>
@@ -25,7 +21,7 @@ export class Cart extends Component {
 
      return( 
         <div>
-        <img className="cart" src={cart} />
+        <img className="cart" src={cart} alt="cart"/>
         <Link to="/checkout">
         <button type="button" className="checkout_button">Checkout</button>
         </Link>

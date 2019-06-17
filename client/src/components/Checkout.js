@@ -9,7 +9,7 @@ class Checkout extends Component {
       return  <div key={`board${index}`}>
               <li className="cart_item_checkout">
              <h3>{board.content.name}</h3>
-             <img className="cart_image" src={board.content.imageurl} />
+             <img className="cart_image" src={board.content.imageurl} alt="snowboard"/>
              <button type="button" className="button" onClick={() => this.props.removeFromCart({board})}>Remove</button>
              <p className="price_in_cart">Price: ${board.content.price}</p>
              <p className="length_in_cart">Length: {board.length}cm</p>
@@ -20,7 +20,7 @@ class Checkout extends Component {
    return(
       <div>
       <div className="checkout_box">
-      <img className="cart" src={cart} />
+      <img className="cart" src={cart} alt="cart"/>
       <Stripe value={this.props.totalPrice} />
       <li className="margin_top">Quantity: {this.props.cartCounter}</li>
       <li className="price_at_checkout">Total: $ {this.props.totalPrice}</li>
