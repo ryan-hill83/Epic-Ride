@@ -6,8 +6,8 @@ import Stripe from './Stripe'
 class Checkout extends Component {
   render() {
     let cartItems = this.props.cart.map((board,index) => {
-      return  <div>
-              <li key={index} className="cart_item_checkout">
+      return  <div key={`board${index}`}>
+              <li className="cart_item_checkout">
              <h3>{board.content.name}</h3>
              <img className="cart_image" src={board.content.imageurl} />
              <button type="button" className="button" onClick={() => this.props.removeFromCart({board})}>Remove</button>
@@ -24,7 +24,7 @@ class Checkout extends Component {
       <Stripe value={this.props.totalPrice} />
       <li className="margin_top">Quantity: {this.props.cartCounter}</li>
       <li className="price_at_checkout">Total: $ {this.props.totalPrice}</li>
-      <li>{cartItems}</li>
+      {cartItems}
       </div>
       </div>)
   

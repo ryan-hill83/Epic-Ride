@@ -22,7 +22,7 @@ export class Content extends Component {
   
   render() {
     let snowboardItems = this.props.snowboards.map((board,index) => {
-      return <div><form onSubmit={this.handleSubmit}><li key={`board${index}`} className="list_item"><div className="content_div1">
+      return <div key={`board${index}`}><form onSubmit={this.handleSubmit}><li className="list_item"><div className="content_div1">
       <h3>{board.name}</h3>
       <h3>$ {board.price}</h3>
       <h4>{board.terrain}</h4> 
