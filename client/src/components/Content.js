@@ -6,15 +6,14 @@ export class Content extends Component {
 
   constructor(props){
     super(props)
-    this.state = {
-      selectedOption: 0
-    }
+    this.state = {}
   }
 
-  handleOptionChange = e => {
+  handleOptionChange = (e, board) => {
     this.setState({
-      selectedOption: e.target.value
+      [board]: e.target.value
     })
+    console.log(this.state)
   }
 
   handleSubmit = e => {
@@ -24,21 +23,32 @@ export class Content extends Component {
   
   render() {
     let snowboardItems = this.props.snowboards.map((board,index) => {
-      return <div><form onSubmit={this.handleSubmit}><li key={index} className="list_item"><div className="content_div1">
+      return <div><form onSubmit={this.handleSubmit}><li key={`board${index}`} className="list_item"><div className="content_div1">
       <h3>{board.name}</h3>
       <h3>$ {board.price}</h3>
       <h4>{board.terrain}</h4> 
       <h4>Shape: {board.shape}</h4>
       <p>Board Length:</p>    
-      <select value={this.state.selectedOption} onChange={this.handleOptionChange}>
-      {board.length.map((item, index) =>     
-            <option value={item} key={index}>{item}</option>     
+      <select 
+      defaultValue="Choose Length"
+      value={this.state.selectedOption} 
+      onChange={e => this.handleOptionChange(e, board.name)} 
+      required>
+      <option disabled>Choose Length</option>
+      {board.length.map((length, index) =>     
+            <option value={length} key={`boardLength${index}`}>{length}</option>     
       )}
       </select> cm
       </div>
       <div className="content_div2">
-      <button className="content_button" type="submit" onClick={() => this.props.addToCart({board}, this.state.selectedOption)}>Add to Cart</button>
-      <img className="image" src={board.imageurl} />
+      <button className="content_button" 
+      type="submit" 
+      onClick={() => this.state[board.name] && this.props.addToCart({board}, this.state[board.name])}>
+      Add to Cart
+      </button>
+      <img className="image" 
+      src={board.imageurl} 
+      alt={`snowboard ${board.name}`}/>
       </div>
       </li>
       </form>
