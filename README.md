@@ -18,5 +18,5 @@ The back end of this project was built with Node.js , Express.js, MongoDB and th
 
 ### Demo ###
 
-![](epic1.gif) <br/>
-![](epic2.gif)
+![](https://github.com/rgawick/Epic-Ride/blob/epic1.gif) <br/>
+![](https://github.com/rgawick/Epic-Ride/blob/epic2.gif)
