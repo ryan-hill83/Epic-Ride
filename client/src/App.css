@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+html{width:100%;
+  list-style: none}
+.header{
+width: 100%;
+background-color: black;
+color:white;
+padding: 5px;
+position: fixed;
+z-index: 3;
+}
+
+.header_text{
+  font-family: 'Russo One', sans-serif;
+  display: inline;
+}
+
+.epic_ride{
+  font-size: 2.2em;
+  margin-left: 5px;
+  display: inline;
+}
+
+.snowboard_supply{
+  font-size: .85em;
+  display: inline;
+}
+
+.logo{
+  height: 52px;
+  width: 55px;
+  margin-left: 5px;
+}
+
+.nav_buttons{
+  background-color: black;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.2em;
+  outline: medium solid black;
+  border: 1px solid black;
+}
+
+.nav_buttons:hover{
+  color: black;
+  background-color: white;
+}
+
+.nav_buttons:focus{
+  outline:0;
+}
+
+.button{
+  background-color: black;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size:1em;
+}
+
+.button:hover{
+  color: black;
+  background-color: white;
+}
+
+.content_button{
+  position: relative;
+  bottom: 160px;
+  background-color: black;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size:1em;
+}
+
+.content_button:hover{
+  color: black;
+  background-color: white;
+}
+
+.checkout_button{
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size:1em;
+  z-index: 1;
+}
+
+.checkout_button:hover{
+  color: black;
+  background-color: white;
+}
+
+.cart{
+  height: 0px;
+  width: 0px;
+}
+
+.cart_image{
+  height: 50px;
+  width: 50px;
+}
+
+
+.nav_bar{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  margin-top: 72px;
+  z-index: 3;
+}
+
+.checkout_box{
+    position: absolute;
+    top: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid;
+    box-shadow: 4px 2px 10px;
+    padding: 30px 60px 40px 60px;
+    z-index: 1;
+}
+
+.price_at_checkout{
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.image{
+  margin-left: 5px;
+  height: 200px;
+  width: 200px;
+}
+
+.snowboard_container{
+  display:flex;
+  flex-direction: column;
+}
+
+.margin_top{
+  margin-top: 5px;
+}
+.main_area{
+  display:flex;
+  flex-direction: column;
+}
+
+.cart_item{
+  display: none;
+}
+
+.cart_div{
+  position: fixed;
+  margin-top: 123px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-bottom: 5px;
+  z-index: 3;
+}
+
+.price_in_cart{
+  position: relative;
+  font-size: .9em;
+  bottom: 80px;
+  left: 60px;
+  margin-bottom: -30px;
+}
+
+.length_in_cart{
+  display: none;
+}
+
+.content_div{
+  margin-top: 250px;
+}
+
+
+
+@media only screen and (min-width: 600px){
+  .main_area{
+    display:flex;
+    flex-direction: row-reverse;
+  }
+  .cart_div{
+    width: 15%;
+    position: fixed;
+    margin-top: 100px;
+    background-color: white;
+    color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 90%;
+  }
+
+  .cart{
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav_buttons{
+    border: 1px solid white;
+    outline: none;
+  }
+
+  .cart_item{
+    display: unset;
+  }
+
+  .length_in_cart{
+    font-size: .9em;
+    display:unset;
+    position: relative;
+    left: 60px;
+    top: -50px;
+  }
+  
+  .content_div{
+    width: 85%;
+    margin-top: 110px;
+  }
+
+  .image{
+    height: 700px;
+    width: 700px;
+  }
+
+  .snowboard_supply{
+    font-size: 1.4em;
+    display: inline;
+  }
+
+  .content_button{
+    position: relative;
+    bottom: 660px;
+  }
+
+  .checkout_button{
+    margin-top: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size:1em;
+    z-index: 1;
+  }
+
+  .checkout_box{
+    position: absolute;
+    top: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid;
+    box-shadow: 4px 2px 10px;
+    padding: 30px 100px 40px 100px;
+}
+
+}
